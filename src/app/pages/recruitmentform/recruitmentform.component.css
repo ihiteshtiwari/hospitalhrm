@@ -1,0 +1,65 @@
+/* Add this CSS code to your component's CSS file (e.g., training-form.component.css) */
+
+.container {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url("https://th.bing.com/th/id/R.d9aac2db6857ce31eb8165400fdfc857?rik=jwTTTCOSOFSZAA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fPhotos-Light-Blue-HD-Backgrounds.jpg&ehk=idqco991QHA9luN8vB0g%2bRMx4uQTqCRgL%2bdOaFsD9oo%3d&risl=&pid=ImgRaw&r=0");
+  }
+  
+  h2 {
+    /* margin-bottom: 20px; */
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #45a049;
+  }
+  
+  .card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: bisque;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+    
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  

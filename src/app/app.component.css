@@ -1,0 +1,13 @@
+/* CSS class to highlight active sidebar link */
+.active {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background color */
+}
+
+.active:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly lighter background color on hover */
+}
+
+/* Optional: Style for active link text */
+.active > a > span {
+    color: #fff; /* White text color */
+}

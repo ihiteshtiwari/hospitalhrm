@@ -1,0 +1,82 @@
+
+<div class="table-container" style="overflow-y: auto; max-height: 400px;">
+    
+    <!-- Morning Shift -->
+    <h5>Morning Shift: {{ morningItemCount }}</h5>
+    <table class="table ">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of morningItems">
+                <td><img [src]="item.image" alt="Image" height="50" width="50" style="border-radius: 50%;"><br>{{ item.name }}</td>
+                <td>{{ item.position }}</td>
+                <td>{{ item.department }}</td>
+            </tr>
+        </tbody>
+    </table>
+  
+    <!-- Afternoon Shift -->
+    <h5>Afternoon Shift: {{ afternoonItemCount }}</h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of afternoonItems">
+                <td><img [src]="item.image" alt="Image" height="50" width="50" style="border-radius: 50%;"><br>{{ item.name }}</td>
+                <td>{{ item.position }}</td>
+                <td>{{ item.department }}</td>
+            </tr>
+        </tbody>
+    </table>
+  
+    <!-- Evening Shift -->
+    <h5>Evening Shift: {{ eveningItemCount }}</h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of eveningItems">
+                <td><img [src]="item.image" alt="Image" height="50" width="50" style="border-radius: 50%;"><br>{{ item.name }}</td>
+                <td>{{ item.position }}</td>
+                <td>{{ item.department }}</td>
+            </tr>
+        </tbody>
+    </table>
+  
+    <!-- Night Shift -->
+    <h5>Night Shift: {{ nightItemCount }}</h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of nightItems">
+                <td><img [src]="item.image" alt="Image" height="50" width="50" style="border-radius: 50%;"><br>{{ item.name }}</td>
+                <td>{{ item.position }}</td>
+                <td>{{ item.department }}</td>
+            </tr>
+        </tbody>
+    </table>
+ 
+</div>
+<hr>
+<a routerLink="/schedule" style="color:rgb(19, 19, 238);">Show All</a>

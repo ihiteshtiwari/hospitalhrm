@@ -1,0 +1,23 @@
+<!-- add-attendance.component.html -->
+
+<div>
+  <h2>Add Attendance</h2>
+  <form (submit)="submitForm()">
+    <div>
+      <label for="employeeId">Employee ID:</label>
+      <input type="text" id="employeeId" name="employeeId" [(ngModel)]="employeeId" required>
+    </div>
+    <div>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" [(ngModel)]="date" required>
+    </div>
+    <div>
+      <label for="status">Status:</label>
+      <select id="status" name="status" [(ngModel)]="status" required>
+        <option value="Present">Present</option>
+        <option value="Absent">Absent</option>
+      </select>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>

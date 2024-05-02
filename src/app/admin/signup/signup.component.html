@@ -1,0 +1,30 @@
+<div class="background-image">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 mt-4">
+      <div class="card transparent-card">
+        <div class="card-body">
+    <h2>Sign Up</h2>
+    <form (ngSubmit)="onSubmit()" #signupForm="ngForm">
+      <div class="form-group">
+        <label>First Name:</label>
+        <input type="text" class="form-control" name="firstName" [(ngModel)]="firstName" required>
+      </div>
+      <div class="form-group">
+        <label>Last Name:</label>
+        <input type="text" class="form-control" name="lastName" [(ngModel)]="lastName" required>
+      </div>
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" class="form-control" name="email" [(ngModel)]="email" required>
+      </div>
+      <div class="form-group">
+        <label>Password:</label>
+        <input type="password" class="form-control" name="password" [(ngModel)]="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!signupForm.valid">Sign Up</button>
+    </form>
+    <div *ngIf="error" class="alert alert-danger mt-3">{{ error }}</div>
+  </div>
+</div>
+    </div></div></div></div>

@@ -1,0 +1,89 @@
+
+main {
+    padding: 20px;
+    max-width: 900px; /* Adjust as needed */
+    margin: 0 auto; /* Center the main content */
+margin-top: 10px;
+margin-bottom: 10px;
+    border: 1px solid black;
+    background-color: azure;
+}
+
+
+section {
+    padding: 10px; /* Apply padding to sections */
+    background-color: #f9f9f9; /* Add background color */
+    border-radius: 5px; /* Add border radius for a nicer look */
+}
+/* CSS for table headings */
+th {
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark text color */
+    font-weight: bold; /* Bold font weight */
+    text-align: center; /* Center text alignment */
+    padding: 10px; /* Padding around the content */
+  }
+  
+  /* CSS for table cells */
+  td {
+    padding: 10px; /* Padding around the content */
+    text-align: center; /* Center text alignment */
+  }
+  
+  /* Optional: Hover effect on table rows */
+  tr:hover {
+    background-color: #e9e9e9; /* Lighter gray background on hover */
+  }
+  
+  #active-tag-text {
+    color:white; /* Change color to indicate active state */
+    font-weight:bolder; /* Optionally, make the active link bold */
+    font-size: 20px;
+  }
+  /* CSS for table headings */
+  th {
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark text color */
+    font-weight: bold; /* Bold font weight */
+    text-align: center; /* Center text alignment */
+    padding: 10px; /* Padding around the content */
+  }
+  
+  /* CSS for table cells */
+  td {
+    padding: 10px; /* Padding around the content */
+    text-align: center; /* Center text alignment */
+  }
+  
+  /* Optional: Hover effect on table rows */
+  tr:hover {
+    background-color: #e9e9e9; /* Lighter gray background on hover */
+  }
+  
+  .table-container {
+    max-height: 70vh; /* Set the maximum height for the table */
+    overflow-y: auto; /* Enable vertical scroll */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table thead {
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa; /* Adjust the background color as needed */
+    z-index: 1; /* Ensure the header stays above the body */
+    
+  }
+  
+  .table th, .table td {
+    padding: 8px;
+    border: 1px solid #dee2e6; /* Adjust the border color as needed */
+  }
+  
+  .table td {
+    vertical-align:middle; /* Align table data vertically in the middle */
+  }
+  

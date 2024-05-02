@@ -1,0 +1,19 @@
+/* Add this CSS to your styles.css or a separate stylesheet */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px; /* Adjust as needed */
+}
+
+.col-sm-6 {
+  flex: 0 0 calc(33.333% - 30px); /* 30px is the margin adjustment, adjust as needed */
+  max-width: calc(33.333% - 30px);
+  box-sizing: border-box;
+  padding: 15px; /* Adjust as needed */
+}
+/* Add this to your CSS file or style section */
+.products-single {
+  border: 1px solid #ddd; /* You can adjust the color and width of the border */
+  margin-bottom: 20px;   /* Optional: Add some spacing between items */
+}

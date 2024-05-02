@@ -1,0 +1,17 @@
+<h2>Attendance List</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Employee ID</th>
+      <th>Date</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let attendance of attendanceList">
+      <td>{{ attendance.employeeId }}</td>
+      <td>{{ attendance.date | date }}</td>
+      <td>{{ attendance.status }}</td>
+    </tr>
+  </tbody>
+</table>

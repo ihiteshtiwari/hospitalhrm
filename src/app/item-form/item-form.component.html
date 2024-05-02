@@ -1,0 +1,137 @@
+<!-- item-form.component.html -->
+<div class="container">
+  <h2>{{ item._id ? 'Edit Employee' : 'Add Employee' }}</h2>
+  <form (submit)="saveItem()" class="my-4">
+    <!-- <div class="mb-3">
+      <label for="employeeId" class="form-label">Employee ID:</label>
+      <input type="text" id="employeeId" [(ngModel)]="item.employeeId" name="employeeId" class="form-control" required>
+    </div> -->
+
+    <div class="mb-3">
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" id="name" [(ngModel)]="item.name" name="name" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="position" class="form-label">Position:</label>
+      <select id="position" [(ngModel)]="item.position" name="position" class="form-select" required>
+          <option value="" disabled selected>Select position</option>
+          <option value="Doctor">Doctor</option>
+          <option value="Nurse">Nurse</option>
+          <option value="Administrator">Administrator</option>
+          <option value="Technician">Technician</option>
+          <option value="Receptionist">Receptionist</option>
+          <option value="Pharmacist">Pharmacist</option>
+          <option value="Therapist">Therapist</option>
+          <option value="Laboratory Technician">Laboratory Technician</option>
+          <option value="Radiologist">Radiologist</option>
+          <!-- Add more position options as needed -->
+      </select>
+  </div>
+  
+
+  <div class="mb-3">
+    <label for="department" class="form-label">Department:</label>
+    <select id="department" [(ngModel)]="item.department" name="department" class="form-select" required>
+        <option value="" disabled selected>Select department</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Orthopedics">Orthopedics</option>
+        <option value="Pediatrics">Pediatrics</option>
+        <option value="Oncology">Oncology</option>
+        <option value="Emergency Medicine">Emergency Medicine</option>
+        <option value="Gynecology">Gynecology</option>
+        <option value="Dermatology">Dermatology</option>
+        <option value="Radiology">Radiology</option>
+        <option value="Anesthesiology">Anesthesiology</option>
+        <option value="Internal Medicine">Internal Medicine</option>
+        <option value="Surgery">Surgery</option>
+        <option value="Urology">Urology</option>
+        <option value="Psychiatry">Psychiatry</option>
+        <option value="Pathology">Pathology</option>
+        <option value="Ophthalmology">Ophthalmology</option>
+        <option value="Otolaryngology">Otolaryngology</option>
+        <option value="Physical Therapy">Physical Therapy</option>
+        <option value="Occupational Therapy">Occupational Therapy</option>
+        <!-- Add more department options as needed -->
+    </select>
+</div>
+<div class="mb-3">
+  <label for="shift" class="form-label">Shift:</label>
+  <select id="shift" [(ngModel)]="item.shift" name="shift" class="form-select" required>
+      <option value="" disabled selected>Select shift</option>
+      <option value="Morning">Morning Shift</option>
+      <option value="Afternoon">Afternoon Shift</option>
+      <option value="Night">Night Shift</option>
+      <option value="Evening">Evening Shift</option>
+      <option value="Graveyard">Graveyard Shift</option>
+      <!-- Add more shift options as needed -->
+  </select>
+</div>
+
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" id="email" [(ngModel)]="item.email" name="email" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone:</label>
+      <input type="tel" id="phone" [(ngModel)]="item.phone" name="phone" class="form-control" required maxlength="10">
+    </div>
+    <div class="mb-3">
+      <label for="date" class="form-label">Date:</label>
+      <input type="date" id="date" [(ngModel)]="item.date" name="date" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="leaveStartDate" class="form-label">Leave Start Date:</label>
+      <input type="date" id="leaveStartDate" [(ngModel)]="item.leaveStartDate" name="leaveStartDate" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="leaveEndDate" class="form-label">Leave End Date:</label>
+      <input type="date" id="leaveEndDate" [(ngModel)]="item.leaveEndDate" name="leaveEndDate" class="form-control" required>
+    </div>
+
+    <!-- <div class="mb-3">
+      <label for="numberOfDays" class="form-label">Number of Days:</label>
+      <input type="text" id="numberOfDays" [(ngModel)]="item.numberOfDays" name="numberOfDays" class="form-control" required>
+    </div> -->
+    <div class="mb-3">
+      <label for="leaveType" class="form-label">Leave Type:</label>
+      <select id="leaveType" [(ngModel)]="item.leaveType" name="leaveType" class="form-select" required>
+          <option value="" disabled selected>Select leave type</option>
+          <option value="Paid">Paid Leave</option>
+          <option value="Unpaid">Unpaid Leave</option>
+          <option value="Sick">Sick Leave</option>
+          <option value="Maternity">Maternity Leave</option>
+          <option value="Paternity">Paternity Leave</option>
+          <option value="Vacation">Vacation Leave</option>
+          <option value="Bereavement">Bereavement Leave</option>
+          <!-- Add more options as needed -->
+      </select>
+  </div>
+  <div class="mb-3">
+    <label for="salary" class="form-label">Salary:</label>
+    <input type="number" id="salary" [(ngModel)]="item.salary" class="form-control"  name="salary" required>
+  </div>
+  <div class="mb-3">
+    <label for="bonus" class="form-label">Bonus:</label>
+    <input type="number" id="bonus" [(ngModel)]="item.bonus" class="form-control" name="bonus" required>
+  </div>
+  <!-- <div class="mb-3">
+    <label for="totalcompensation" class="form-label">Total Compensation :</label>
+    <input type="number" id="totalcompensation" [(ngModel)]="item.totalcompensation" class="form-control" name="totalcompensation" required>
+  </div> -->
+  
+    <div class="mb-3">
+      <label for="image" class="form-label">Image:</label>
+      <div *ngIf="item.imagePreview" class="mb-3">
+        <img [src]="item.imagePreview" alt="Selected Image" class="img-fluid">
+      </div>
+      <input type="file" (change)="onFileChange($event)" accept="image/*" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">{{ item._id ? 'Update Employee' : 'Add Employee' }}</button>
+  </form>
+</div>

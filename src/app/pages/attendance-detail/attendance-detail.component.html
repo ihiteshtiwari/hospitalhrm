@@ -1,0 +1,24 @@
+<h2>{{ staffName }}'s Attendance Details</h2>
+
+<div *ngIf="months.length > 0">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Attendance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let month of months">
+        <td>{{ month.name }}</td>
+        <td>{{ month.attendance }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div *ngIf="months.length === 0">
+  <p>No attendance details available.</p>
+</div>
+
+<button mat-button (click)="closeModal()">Close</button>

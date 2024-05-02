@@ -1,0 +1,68 @@
+/* CSS for table headings */
+th {
+    color: #333; /* Dark text color */
+    font-weight: bold; /* Bold font weight */
+    text-align: center; /* Center text alignment */
+    padding: 10px; /* Padding around the content */
+}
+
+/* CSS for table cells */
+td {
+    padding: 10px; /* Padding around the content */
+    text-align: center; /* Center text alignment */
+}
+
+/* Optional: Hover effect on table rows */
+tr:hover {
+    background-color: #e9e9e9; /* Lighter gray background on hover */
+}
+
+#active-tag-text {
+    color:white; /* Change color to indicate active state */
+    font-weight:bolder; /* Optionally, make the active link bold */
+    font-size: 20px;
+  }
+  /* CSS for table headings */
+th {
+    color: #333; /* Dark text color */
+    font-weight: bold; /* Bold font weight */
+    text-align: center; /* Center text alignment */
+    padding: 10px; /* Padding around the content */
+}
+
+/* CSS for table cells */
+td {
+    padding: 10px; /* Padding around the content */
+    text-align: center; /* Center text alignment */
+}
+
+/* Optional: Hover effect on table rows */
+tr:hover {
+    background-color: #e9e9e9; /* Lighter gray background on hover */
+}
+
+.table-container {
+    max-height: 50vh; /* Set the maximum height for the table */
+    overflow-y: auto; /* Enable vertical scroll */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Ensure the header stays above the body */
+    
+}
+
+.table th, .table td {
+    padding: 8px;
+    border: 1px solid #dee2e6; /* Adjust the border color as needed */
+}
+
+.table td {
+    vertical-align:middle; /* Align table data vertically in the middle */
+}

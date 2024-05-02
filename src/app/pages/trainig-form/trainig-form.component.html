@@ -1,0 +1,36 @@
+<!-- training-form.component.html -->
+<div class="container">
+    <h2>Training Form</h2>
+<div class="card">
+    
+<form (ngSubmit)="submitForm()">
+    <div>
+      <label for="employeeId">Employee ID:</label>
+      <input type="text" id="employeeId" name="employeeId" [(ngModel)]="formData.employeeId" required>
+    </div>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+    </div>
+    <div>
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department" [(ngModel)]="formData.department" required>
+    </div>
+    <div>
+      <label for="trainingprogram">Training Program:</label>
+      <input type="text" id="trainingprogram" name="trainingprogram" [(ngModel)]="formData.trainingprogram" required>
+    </div>
+    <div>
+      <label for="certification">Certification:</label>
+      <input type="text" id="certification" name="certification" [(ngModel)]="formData.certification" required>
+    </div>
+    <div>
+      <label for="completiondate">Completion Date:</label>
+      <input type="date" id="completiondate" name="completiondate" [(ngModel)]="formData.completiondate" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+</div>
+</div>
+  

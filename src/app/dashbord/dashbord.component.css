@@ -1,0 +1,7 @@
+
+#active-tag-text {
+  color:white; /* Change color to indicate active state */
+  font-weight:bolder; /* Optionally, make the active link bold */
+  font-size: 20px;
+}
+

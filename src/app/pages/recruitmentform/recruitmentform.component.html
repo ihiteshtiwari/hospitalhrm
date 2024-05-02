@@ -1,0 +1,37 @@
+
+<!-- training-form.component.html -->
+<div class="container">
+    <h2>Recruitment Form</h2>
+<div class="card">
+    
+<form (ngSubmit)="submitForm()">
+    <div>
+      <label for="jobtitle">Job Title :</label>
+      <input type="text" id="jobtitle" name="jobtitle" [(ngModel)]="formData.jobtitle" required>
+    </div>
+    <div>
+      <label for="department">Department :</label>
+      <input type="text" id="department" name="department" [(ngModel)]="formData.department" required>
+    </div>
+    <!-- <div>
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department" [(ngModel)]="formData.department" required>
+    </div> -->
+    <div>
+      <label for="location">Location :</label>
+      <input type="text" id="location" name="location" [(ngModel)]="formData.location" required>
+    </div>
+    <div>
+      <label for="posteddate">Posted Date</label>
+      <input type="date" id="posteddate" name="posteddate" [(ngModel)]="formData.posteddate" required>
+    </div>
+    <div>
+      <label for="status">Status :</label>
+      <input type="text" id="status" name="status" [(ngModel)]="formData.status" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+</div>
+</div>
+  

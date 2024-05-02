@@ -1,0 +1,44 @@
+<!-- item-list.component.html -->
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Image</th>
+        <th scope="col">Name</th>
+        <th scope="col">Position</th>
+        <th scope="col">Department</th>
+        <th scope="col">Shift</th>
+       
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td>{{ item.employeeId }}</td>
+        <td>
+          <img [src]="item.image" alt="Image" height="50" width="50" style="border-radius: 50%;">
+      </td>      
+        <td>{{ item.name }}</td>
+        <td>{{ item.position }}</td>
+        <td>{{ item.department }}</td>
+        <td>{{ item.shift }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteItem(item._id)">
+              <i class="fas fa-trash"></i>
+          </button>
+          <button class="btn btn-info" (click)="showDetails(item._id)">
+              <i class="fas fa-info-circle"></i> 
+          </button>
+          <button class="btn btn-primary" (click)="updateItem(item._id)">
+              <i class="fas fa-edit"></i> 
+          </button>
+          <a class="btn btn-info" href="/new">
+              <i class="fas fa-plus"></i>
+          </a>
+      </td>
+      
+      </tr>
+    </tbody>
+  </table>
+</div>
